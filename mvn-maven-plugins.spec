@@ -4,7 +4,7 @@
 #
 Name     : mvn-maven-plugins
 Version  : 24
-Release  : 2
+Release  : 3
 URL      : https://github.com/apache/maven-plugins/archive/maven-plugins-24.tar.gz
 Source0  : https://github.com/apache/maven-plugins/archive/maven-plugins-24.tar.gz
 Source1  : https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-metadata.xml
@@ -38,31 +38,31 @@ data components for the mvn-maven-plugins package.
 
 %install
 mkdir -p %{buildroot}/usr/share/java/.m2/repository/org/apache/maven/plugins
-cp %{SOURCE1} %{buildroot}/usr/share/java/.m2/repository/org/apache/maven/plugins
+cp %{SOURCE1} %{buildroot}/usr/share/java/.m2/repository/org/apache/maven/plugins/maven-metadata-central.xml
 
 mkdir -p %{buildroot}/usr/share/java/.m2/repository/org/apache/maven/plugins/maven-plugins/24
-cp %{SOURCE2} %{buildroot}/usr/share/java/.m2/repository/org/apache/maven/plugins/maven-plugins/24
+cp %{SOURCE2} %{buildroot}/usr/share/java/.m2/repository/org/apache/maven/plugins/maven-plugins/24/maven-plugins-24.pom
 
 mkdir -p %{buildroot}/usr/share/java/.m2/repository/org/apache/maven/plugins/maven-plugins/25
-cp %{SOURCE3} %{buildroot}/usr/share/java/.m2/repository/org/apache/maven/plugins/maven-plugins/25
+cp %{SOURCE3} %{buildroot}/usr/share/java/.m2/repository/org/apache/maven/plugins/maven-plugins/25/maven-plugins-25.pom
 
 mkdir -p %{buildroot}/usr/share/java/.m2/repository/org/apache/maven/plugins/maven-plugins/27
-cp %{SOURCE4} %{buildroot}/usr/share/java/.m2/repository/org/apache/maven/plugins/maven-plugins/27
+cp %{SOURCE4} %{buildroot}/usr/share/java/.m2/repository/org/apache/maven/plugins/maven-plugins/27/maven-plugins-27.pom
 
 mkdir -p %{buildroot}/usr/share/java/.m2/repository/org/apache/maven/plugins/maven-plugins/28
-cp %{SOURCE5} %{buildroot}/usr/share/java/.m2/repository/org/apache/maven/plugins/maven-plugins/28
+cp %{SOURCE5} %{buildroot}/usr/share/java/.m2/repository/org/apache/maven/plugins/maven-plugins/28/maven-plugins-28.pom
 
 mkdir -p %{buildroot}/usr/share/java/.m2/repository/org/apache/maven/plugins/maven-plugins/30
-cp %{SOURCE6} %{buildroot}/usr/share/java/.m2/repository/org/apache/maven/plugins/maven-plugins/30
+cp %{SOURCE6} %{buildroot}/usr/share/java/.m2/repository/org/apache/maven/plugins/maven-plugins/30/maven-plugins-30.pom
 
 mkdir -p %{buildroot}/usr/share/java/.m2/repository/org/apache/maven/plugins/maven-plugins/31
-cp %{SOURCE7} %{buildroot}/usr/share/java/.m2/repository/org/apache/maven/plugins/maven-plugins/31
+cp %{SOURCE7} %{buildroot}/usr/share/java/.m2/repository/org/apache/maven/plugins/maven-plugins/31/maven-plugins-31.pom
 
 mkdir -p %{buildroot}/usr/share/java/.m2/repository/org/apache/maven/plugins/maven-plugins/32
-cp %{SOURCE8} %{buildroot}/usr/share/java/.m2/repository/org/apache/maven/plugins/maven-plugins/32
+cp %{SOURCE8} %{buildroot}/usr/share/java/.m2/repository/org/apache/maven/plugins/maven-plugins/32/maven-plugins-32.pom
 
 mkdir -p %{buildroot}/usr/share/java/.m2/repository/org/apache/maven/plugins/maven-plugins/33
-cp %{SOURCE9} %{buildroot}/usr/share/java/.m2/repository/org/apache/maven/plugins/maven-plugins/33
+cp %{SOURCE9} %{buildroot}/usr/share/java/.m2/repository/org/apache/maven/plugins/maven-plugins/33/maven-plugins-33.pom
 
 
 %files
@@ -70,7 +70,7 @@ cp %{SOURCE9} %{buildroot}/usr/share/java/.m2/repository/org/apache/maven/plugin
 
 %files data
 %defattr(-,root,root,-)
-/usr/share/java/.m2/repository/org/apache/maven/plugins/maven-metadata.xml
+/usr/share/java/.m2/repository/org/apache/maven/plugins/maven-metadata-central.xml
 /usr/share/java/.m2/repository/org/apache/maven/plugins/maven-plugins/24/maven-plugins-24.pom
 /usr/share/java/.m2/repository/org/apache/maven/plugins/maven-plugins/25/maven-plugins-25.pom
 /usr/share/java/.m2/repository/org/apache/maven/plugins/maven-plugins/27/maven-plugins-27.pom
