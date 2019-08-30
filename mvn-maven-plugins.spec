@@ -4,7 +4,7 @@
 #
 Name     : mvn-maven-plugins
 Version  : 24
-Release  : 4
+Release  : 5
 URL      : https://github.com/apache/maven-plugins/archive/maven-plugins-24.tar.gz
 Source0  : https://github.com/apache/maven-plugins/archive/maven-plugins-24.tar.gz
 Source1  : https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-metadata.xml
